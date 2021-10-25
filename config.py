@@ -1,7 +1,7 @@
 token = "1827098555:AAFay8gZy4c5pyxUc6I3HpkOgeheDl63Tww"
 liga_bbva = ['Barcelona', 'Real Madrid', 'Alavés', 'Athletic Bilbao', 'Atlético Madrid',
              'Cádiz', 'Celta Vigo', 'Eibar', 'Elche', 'Getafe', 'Granada',
-             'Huesca', 'Levante', 'Osasuna', 'Real Betis', 'Real Madrid',
+             'Huesca', 'Levante', 'Osasuna', 'Real Betis',
              'Real Sociedad', 'Sevilla', 'Valencia', 'Valladolid', 'Villarreal']
 seria_a = ['Juventus', 'AC Milan', 'Atalanta', 'Benevento', 'Bologna',
            'Cagliari', 'Crotone', 'Fiorentina', 'Genoa', 'Hellas Verona',
@@ -19,3 +19,4 @@ barclays = ['Chelsea', 'Manchester United', 'Arsenal', 'Aston Villa', 'Brighton 
            'Burnley', 'Crystal Palace', 'Everton', 'Fulham', 'Leeds United',
            'Leicester City', 'Liverpool', 'Manchester City', 'Newcastle United', 'Sheffield United',
            'Southampton', 'Tottenham Hotspur', 'West Bromwich Albion', 'West Ham United', 'Wolverhampton Wanderers']
+# print(len(liga_bbva))
