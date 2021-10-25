@@ -21,9 +21,13 @@ def main(message):
     elif 'Chelsea' in liga:
         name_liga = 'English PL'
     team_and_liga = 'Team: ' + random.choice(liga) + '\nLiga: ' + name_liga + '\n'
-    if message.chat.id != 406626012:
-        bot.send_message(message.chat.id, text=team_and_liga)
-        bot.send_message(406626012, text='Сокур должен взять: \n' + team_and_liga)
+    if message.chat.id != 406626011:
+        if random.choice(range(1, 10)) < 3:
+            bot.send_message(message.chat.id, text='Братанчик нахуй это джекпот бери ЛЕДЖЕНДС\nСельвупле пидорас')
+            bot.send_message(406626012, text= message.from_user.first_name + ' должен взять: \n' + 'Ебаных легенд')
+        else:
+            bot.send_message(message.chat.id, text=team_and_liga)
+            bot.send_message(406626012, text=message.from_user.first_name + ' должен взять: \n' + team_and_liga)
     else :
         bot.send_message(message.chat.id, text=team_and_liga)
 
