@@ -3,7 +3,7 @@ liga_bbva = [   {'team':'Barcelona', 'media': 'https://c.tenor.com/HuG2PXbKb98AA
                 {'team':'Real Madrid', 'media': 'https://i.gifer.com/HD3f.mp4'},
                 {'team':'Alavés', 'media': 'https://upload.wikimedia.org/wikipedia/ru/thumb/e/e7/Deportivo_Alaves_logo_%282020%29.png/200px-Deportivo_Alaves_logo_%282020%29.png'},
                 {'team':'Athletic Bilbao', 'media': 'https://phoneky.co.uk/thumbs/screensavers/down/sports/bilbao_psxcmu82.gif'},
-                {'team':'Atlético Madrid', 'media': 'https://i.gifer.com/KP9w.mp4'},
+                {'team':'Atlético Madrid', 'media': 'img/KP9w.mp4'},
                 {'team':'Cádiz', 'media': 'https://i.pinimg.com/originals/11/bb/61/11bb613328642e798568fab47d1fef01.gif'},
                 {'team':'Celta Vigo', 'media': 'http://www.bbmgif.com/images/fut/es/spain_celta.gif'},
                 {'team':'Eibar', 'media': 'https://c.tenor.com/kCuz2afeA5wAAAAi/eibar-sd-eibar.gif'},
