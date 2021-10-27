@@ -2,15 +2,15 @@ import random
 liga_bbva = [   {'team':'Barcelona', 'media': 'https://c.tenor.com/HuG2PXbKb98AAAAC/barcelona-fc-barcelona.gif'},
                 {'team':'Real Madrid', 'media': 'https://i.gifer.com/HD3f.mp4'},
                 {'team':'Alavés', 'media': 'https://upload.wikimedia.org/wikipedia/ru/thumb/e/e7/Deportivo_Alaves_logo_%282020%29.png/200px-Deportivo_Alaves_logo_%282020%29.png'},
-                {'team':'Athletic Bilbao', 'media': ''},
-                {'team':'Atlético Madrid', 'media': ''},
-                {'team':'Cádiz', 'media': ''},
-                {'team':'Celta Vigo', 'media': ''},
-                {'team':'Eibar', 'media': ''},
-                {'team':'Elche', 'media': ''},
-                {'team':'Getafe', 'media': ''},
-                {'team':'Granada', 'media': ''},
-                {'team':'Huesca', 'media': ''},
+                {'team':'Athletic Bilbao', 'media': 'https://phoneky.co.uk/thumbs/screensavers/down/sports/bilbao_psxcmu82.gif'},
+                {'team':'Atlético Madrid', 'media': 'https://i.gifer.com/KP9w.mp4'},
+                {'team':'Cádiz', 'media': 'https://i.pinimg.com/originals/11/bb/61/11bb613328642e798568fab47d1fef01.gif'},
+                {'team':'Celta Vigo', 'media': 'http://www.bbmgif.com/images/fut/es/spain_celta.gif'},
+                {'team':'Eibar', 'media': 'https://c.tenor.com/kCuz2afeA5wAAAAi/eibar-sd-eibar.gif'},
+                {'team':'Elche', 'media': 'https://media1.giphy.com/media/idMVI5FnHqsiTYOT9W/giphy.gif?cid=790b76119ec6ab454b4a62972cb13c350e1453978fe58e82&rid=giphy.gif&ct=s'},
+                {'team':'Getafe', 'media': 'https://c.tenor.com/91dYAas8UfAAAAAd/bordal%C3%A1s-getafe-sorpresa.gif'},
+                {'team':'Granada', 'media': 'https://www.gifservice.fr/en/gif/sports-soccer-club-europa-spain-granada-g640-p9226-flarge.gif'},
+                {'team':'Huesca', 'media': 'https://www.gifservice.fr/en/gif/sports-soccer-club-europa-spain-huesca-sd-g653-p9300-flarge.gif'},
                 {'team':'Levante', 'media': ''},
                 {'team':'Osasuna', 'media': ''},
                 {'team':'Real Betis', 'media':  ''},
@@ -103,4 +103,4 @@ barclays = [{'team': 'Chelsea', 'media': ''},
             {'team': 'Wolverhampton Wanderers', 'media': ''}]
 # team = random.choice(liga_bbva)
 
-print(liga_bbva[2])
+# print(liga_bbva[2])
