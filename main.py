@@ -71,6 +71,8 @@ def send_logo(team, message):
             except:
                 print('except')
                 bot.send_photo(message.chat.id, 'Bztt_L4jfX8.jpg')
+            finally:
+                bot.send_photo(message.chat.id, 'Bztt_L4jfX8.jpg')
         else:
             bot.send_photo(message.chat.id, media_url)
     else:
