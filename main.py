@@ -18,7 +18,7 @@ def main(message):
 def send_message(message, team, liga):
     liga_name = get_liga(liga)
     team_name = team['team']
-    media_url = team['media']
+    print(liga_name)
     team_and_liga = 'Team: ' + team_name + '\nLiga: ' + liga_name + '\n'
     if message.chat.id != admin:
         if random.choice(range(1, 10)) < 3:
@@ -53,10 +53,11 @@ def get_liga(liga):
 def send_logo(team, message):
     """Send team logo"""
     """Team from France"""
-    if team['media'] == '':
-        bot.send_video(message.chat.id, 'https://i.pinimg.com/originals/28/9d/17/289d1792fbe86e3a517f4e564117c2c3.gif') 
+    media_url = team['media']
+    if media_url != '':
+        bot.send_video(message.chat.id, media_url) 
     else:
-        print('True')
+        bot.send_message(message.chat.id, text='NO LOGO')
     # elif team == 'Monaco':
     #     bot.send_video(message.chat.id, 'https://www.gifservice.fr/img/gif-vignette-small/3c10cec4e948d06c5b6c31536ea7f119/549-2014-sports-soccer-club-france-provence-alpes-cote-dazur-as-monaco-2014.gif')
     
