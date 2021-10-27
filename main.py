@@ -71,6 +71,7 @@ def send_logo(team, message):
                 bot.send_video(message.chat.id, media_url)
             else :
                 print('no')
+                print(media_url[:3])
                 video = open(media_url, "r")
                 bot.send_video(message.chat.id, video)
         else:
