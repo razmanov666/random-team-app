@@ -17,7 +17,7 @@ admin = 406626012
 @bot.message_handler(commands=['start', 'help'])
 def cycle(message):
     for i in list(range(20)):
-        main(message)
+        main(message, i)
 def main(message, i):
     liga = random.choice(all_teams)
     # team = random.choice(liga)
