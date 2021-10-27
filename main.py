@@ -22,7 +22,6 @@ def main(message):
 def send_message(message, team, liga):
     liga_name = get_liga(liga)
     team_name = team['team']
-    print(liga_name)
     team_and_liga = 'Team: ' + team_name + '\nLiga: ' + liga_name + '\n'
     if message.chat.id != admin:
         if random.choice(range(1, 10)) < 3:
@@ -59,8 +58,8 @@ def send_logo(team, message):
     """Team from France"""
     media_url = team['media']
     if media_url != '':
-        print(media_url[-4:-1]) 
-        if media_url[-4:-1] is '.mp4' or media_url[-4:-1] is '.gif':
+        print(media_url[-4:]) 
+        if media_url[-4:] == '.mp4' or media_url[-4:] == '.gif':
             bot.send_video(message.chat.id, media_url) 
     else:
         bot.send_message(message.chat.id, text='No logo yet')
