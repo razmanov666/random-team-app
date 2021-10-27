@@ -37,15 +37,15 @@ def send_message(message, team, liga):
 
 def get_liga(liga):
     liga_name = ''
-    if 'Barcelona' in liga:
+    if teams.liga_bbva is liga:
         liga_name = 'Liga BBVA'
-    elif 'Juventus' in liga:
+    elif teams.seria_a is liga:
         liga_name = 'Seria A'
-    elif 'PSG' in liga:
+    elif teams.ligue_1 is liga:
         liga_name = 'Ligue 1'
-    elif 'Borussia Dortmund' in liga:
+    elif teams.bundesliga is liga:
         liga_name = 'Bundesliga'
-    elif 'Chelsea' in liga:
+    elif teams.barclays is liga:
         liga_name = 'English PL'
     return liga_name
 
@@ -57,7 +57,7 @@ def send_logo(team, message):
     if media_url != '':
         bot.send_video(message.chat.id, media_url) 
     else:
-        bot.send_message(message.chat.id, text='NO LOGO')
+        bot.send_message(message.chat.id, text='No logo yet')
     # elif team == 'Monaco':
     #     bot.send_video(message.chat.id, 'https://www.gifservice.fr/img/gif-vignette-small/3c10cec4e948d06c5b6c31536ea7f119/549-2014-sports-soccer-club-france-provence-alpes-cote-dazur-as-monaco-2014.gif')
     
