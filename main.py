@@ -70,9 +70,8 @@ def send_logo(team, message):
                 bot.send_video(message.chat.id, media_url)
             except:
                 print('except')
-                bot.send_photo(message.chat.id, 'Bztt_L4jfX8.jpg')
-            finally:
-                bot.send_photo(message.chat.id, 'Bztt_L4jfX8.jpg')
+                fail = open('Bztt_L4jfX8.jpg', 'r')
+                bot.send_photo(message.chat.id, fail)
         else:
             bot.send_photo(message.chat.id, media_url)
     else:
