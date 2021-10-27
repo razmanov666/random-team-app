@@ -66,14 +66,10 @@ def send_logo(team, message):
     if media_url != '':
         print(media_url[-4:]) 
         if media_url[-4:] == '.mp4' or media_url[-4:] == '.gif':
-            if media_url[:4] == 'http':
-                print('yes')
+            try:
                 bot.send_video(message.chat.id, media_url)
-            else :
-                print('no')
-                print(media_url[:4])
-                video = open(media_url, "r")
-                bot.send_video(message.chat.id, video)
+            except FileNotFoundError:
+                bot.send_photo(message.chat.id, 'Bztt_L4jfX8.jpg')
         else:
             bot.send_photo(message.chat.id, media_url)
     else:
