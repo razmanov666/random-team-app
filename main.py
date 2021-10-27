@@ -9,6 +9,10 @@ bogma = 426128881
 admin = 406626012
 
 @bot.message_handler(commands=['start', 'help'])
+def cycle(message):
+    for i in list(range(100)):
+        main(message)
+
 def main(message):
     liga = random.choice(all_teams)
     team = random.choice(liga)
@@ -55,7 +59,9 @@ def send_logo(team, message):
     """Team from France"""
     media_url = team['media']
     if media_url != '':
-        bot.send_video(message.chat.id, media_url) 
+        print(media_url[-4:-1]) 
+        if media_url[-4:-1] is '.mp4' or media_url[-4:-1] is '.gif':
+            bot.send_video(message.chat.id, media_url) 
     else:
         bot.send_message(message.chat.id, text='No logo yet')
     # elif team == 'Monaco':
