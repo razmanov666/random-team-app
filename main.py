@@ -69,6 +69,7 @@ def send_logo(team, message):
             try:
                 bot.send_video(message.chat.id, media_url)
             except FileNotFoundError:
+                print('except')
                 bot.send_photo(message.chat.id, 'Bztt_L4jfX8.jpg')
         else:
             bot.send_photo(message.chat.id, media_url)
