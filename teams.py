@@ -66,7 +66,7 @@ bundesliga = [  {'team': 'Borussia Dortmund', 'media': 'https://media3.giphy.com
                 {'team': 'Bayern Munich', 'media': 'https://img.fcbayern.com/image/upload/cms/public/images/fcbayern-com/homepage/social-media/trachtentanz_muller.gif'},
                 {'team': 'FC Augsburg', 'media': 'https://c.tenor.com/eCoQRFOa1FMAAAAd/southampton-danso.gif'},
                 {'team': 'Hertha BSC', 'media': 'https://c.tenor.com/f1tPRobqWLoAAAAS/hertha-berlin.gif'},
-                {'team': 'Union Berlin', 'media': 'http://img2.joyreactor.cc/pics/post/webm/%D0%B3%D0%B8%D1%84%D0%BA%D0%B8-%D1%81%D0%B2%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%B0-%D0%BF%D0%B5%D1%81%D0%BE%D1%87%D0%BD%D0%B8%D1%86%D0%B0-%D0%B2%D0%B5%D0%BB%D0%BE%D1%81%D0%B8%D0%BF%D0%B5%D0%B4-1122530.webm'},
+                {'team': 'Union Berlin', 'media': 'https://thumbs.gfycat.com/AdorableEarlyBeagle-mobile.mp4'},
                 # https://promdevelop.ru/wp-content/uploads/2021/07/Svastika-768x480.jpg
                 {'team': 'Arminia Bielefeld', 'media': 'https://c.tenor.com/lszgDhczfcYAAAAC/haxteluenq-haxtanak.gif'},
                 {'team': 'Werder Bremen', 'media': 'https://img.webme.com/pic/m/meine-gifs/werderbremen2.gif'},
