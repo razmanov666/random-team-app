@@ -8,15 +8,15 @@ all_teams = [
             # teams.liga_bbva,
             # teams.seria_a
             # teams.ligue_1
-            teams.bundesliga 
-            # teams.barclays
+            # teams.bundesliga,
+            teams.barclays
             ]
 bogma = 426128881
 admin = 406626012
 
 @bot.message_handler(commands=['start', 'help'])
 def cycle(message):
-    for i in list(range(18)):
+    for i in list(range(20)):
         main(message, i)
 def main(message, i):
     liga = random.choice(all_teams)
