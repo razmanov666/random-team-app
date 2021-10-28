@@ -62,7 +62,7 @@ ligue_1 = [ {'team': 'PSG', 'media': 'https://i.pinimg.com/originals/28/9d/17/28
             {'team': 'Saint-Étienne', 'media': 'http://carnus.c.a.pic.centerblog.net/4c3dc5f2.gif'},
             {'team': 'Strasbourg', 'media': 'https://c.tenor.com/dMdu4O5Cpc4AAAAS/strasbourg.gif'}]
 
-bundesliga = [  {'team': 'Borussia Dortmund', 'media': 'https://c.tenor.com/NYHpfwEqd4EAAAAS/haalandbrabo.gif'},
+bundesliga = [  {'team': 'Borussia Dortmund', 'media': 'https://media3.giphy.com/media/lqqTQURjPNKewAE8Tp/giphy.gif'},
                 {'team': 'Bayern Munich', 'media': 'https://img.fcbayern.com/image/upload/cms/public/images/fcbayern-com/homepage/social-media/trachtentanz_muller.gif'},
                 {'team': 'FC Augsburg', 'media': 'https://c.tenor.com/eCoQRFOa1FMAAAAd/southampton-danso.gif'},
                 {'team': 'Hertha BSC', 'media': 'https://c.tenor.com/f1tPRobqWLoAAAAS/hertha-berlin.gif'},
@@ -82,7 +82,7 @@ bundesliga = [  {'team': 'Borussia Dortmund', 'media': 'https://c.tenor.com/NYHp
                 {'team': 'VfB Stuttgart', 'media': 'https://c.tenor.com/Uye3dH36LqYAAAAS/vfb-stuttgart.gif'},
                 {'team': 'VfL Wolfsburg', 'media': 'https://c.tenor.com/Z1FbNa5FDlgAAAAS/vfl-wolfsburg.gif'}]
 
-barclays = [{'team': 'Chelsea', 'media': ''},
+barclays = [{'team': 'Chelsea', 'media': 'https://c.tenor.com/r1iKg11WGwgAAAAM/heiitse-cfc.gif'},
             {'team': 'Manchester United', 'media': ''},
             {'team': 'Arsenal', 'media': ''},
             {'team': 'Aston Villa', 'media': ''},

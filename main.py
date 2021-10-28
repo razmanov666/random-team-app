@@ -65,7 +65,7 @@ def send_logo(team, message):
     media_url = team['media']
     if media_url != '':
         print(media_url[-4:]) 
-        if media_url[-4:] == '.mp4' or media_url[-4:] == '.gif':
+        if media_url[-4:] == '.mp4' or media_url[-4:] == '.gif' or media_url[-5:] == '.webm':
             try:
                 bot.send_video(message.chat.id, media_url)
             except:
