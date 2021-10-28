@@ -32,15 +32,15 @@ def send_message(message, team, liga):
     team_name = team['team']
     team_and_liga = 'Team: ' + team_name + '\nLiga: ' + liga_name + '\n'
     if message.chat.id != admin:
-        # if random.choice(range(1, 10)) < 3:
-        #     bot.send_video(message.chat.id, 'https://c.tenor.com/4fH8zSIuSvcAAAAM/cristiano-ronaldo-soccer.gif')
-        #     bot.send_message(message.chat.id, 'МУЧОС ГРАСИАС АФЕССИОНА SUIIIIIUIU')
-        #     bot.send_message(message.chat.id, text='Братанчик нахуй это джекпот бери ЛЕДЖЕНДС\nСельвупле пидорас')
-        #     bot.send_message(admin, text=message.from_user.first_name + ' должен взять: \n' + 'Ебаных легенд')
-        # else:
-        send_logo(team, message)
-        bot.send_message(message.chat.id, text=team_and_liga)
-        bot.send_message(admin, text=message.from_user.first_name + ' должен взять: \n' + team_and_liga)
+        if random.choice(range(1.0, 10.0)) < 2.5:
+            bot.send_video(message.chat.id, 'https://c.tenor.com/4fH8zSIuSvcAAAAM/cristiano-ronaldo-soccer.gif')
+            bot.send_message(message.chat.id, 'МУЧОС ГРАСИАС АФЕССИОНА SUIIIIIUIU')
+            bot.send_message(message.chat.id, text='Братанчик нахуй это джекпот бери ЛЕДЖЕНДС\nСельвупле пидорас')
+            bot.send_message(admin, text=message.from_user.first_name + ' должен взять: \n' + 'Ебаных легенд')
+        else:
+            send_logo(team, message)
+            bot.send_message(message.chat.id, text=team_and_liga)
+            bot.send_message(admin, text=message.from_user.first_name + ' должен взять: \n' + team_and_liga)
     else:
         send_logo(team, message)
         bot.send_message(message.chat.id, text=team_and_liga)
