@@ -6,8 +6,8 @@ import teams
 bot = telebot.TeleBot(config.token)
 all_teams = [
             # teams.liga_bbva,
-            teams.seria_a,
-            teams.ligue_1 
+            teams.seria_a
+            # teams.ligue_1 
             # teams.bundesliga, 
             # teams.barclays
             ]
@@ -16,7 +16,7 @@ admin = 406626012
 
 @bot.message_handler(commands=['start', 'help'])
 def cycle(message):
-    for i in list(range(20)):
+    for i in list(range(40)):
         main(message, i)
 def main(message, i):
     liga = random.choice(all_teams)
