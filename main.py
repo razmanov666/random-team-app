@@ -6,9 +6,9 @@ import teams
 bot = telebot.TeleBot(config.token)
 all_teams = [
             # teams.liga_bbva,
-            teams.seria_a
+            # teams.seria_a
             # teams.ligue_1
-            # teams.bundesliga 
+            teams.bundesliga 
             # teams.barclays
             ]
 bogma = 426128881
