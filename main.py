@@ -25,15 +25,34 @@ pure_random = []
 def main(message):
     liga = random.choice(all_teams)
     team = random.choice(liga)
-    # team = liga[i]
+    # check_team(message, team)
+    unique_value = check_team(message, team)
+    while unique_value == 'not_unique':
+        liga = random.choice(all_teams)
+        team = random.choice(liga)
+        unique_value = check_team(message, team)
+        print(unique_value)
     send_message(message, team, liga)
 
+
+def check_team(message, team):
+    try:
+        with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
+            text_file = file.read()
+            print('team: ' + team['team'] + 'in ' + text_file)
+            if team['team'] in text_file:
+                return 'not_unique'
+            else:
+                return 'unique'
+    except:
+        with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+            file.write('')
 
 def send_message(message, team, liga):
     liga_name = get_liga(liga)
     team_name = team['team']
     team_and_liga = 'Team: ' + team_name + '\nLiga: ' + liga_name + '\n'
-    get_pure_random(message, team)
+    add_pure_random(message, team)
     if message.chat.id != admin:
         if random.choice(range(1, 100)) < 20:
             bot.send_video(message.chat.id, 'https://c.tenor.com/4fH8zSIuSvcAAAAM/cristiano-ronaldo-soccer.gif')
@@ -69,7 +88,7 @@ def send_logo(team, message):
     """Team from France"""
     media_url = team['media']
     if media_url != '':
-        print(media_url[-4:]) 
+        # print(media_url[-4:]) 
         if media_url[-4:] == '.mp4' or media_url[-4:] == '.gif' or media_url[-5:] == '.webm':
             try:
                 bot.send_video(message.chat.id, media_url)
@@ -83,10 +102,65 @@ def send_logo(team, message):
         bot.send_message(message.chat.id, text='No logo yet')
 
 
-def get_pure_random(message, team):
-    file = open('pure_random/' + str(message.chat.id) + '.txt', '+')
-    file.writelines(team)
-    for line in file:
-        print(line)
+def add_pure_random(message, team):
+
+    with open('pure_random/' + str(message.chat.id) + '.txt', 'a') as file:
+        file.writelines(team['team']+'\n')
+    with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
+        text_file = file.read()
+        if 'Schalke 04' in text_file:
+            count_n = file.read().count('\n')
+            if count_n > 10:
+                file.close
+                with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+                    file.write(team['team'] + '\n')
+                return True
+            else:
+                return False
+
+    if(str(file).count('\n') > 10):
+        print('clear')
+        file = open('pure_random/' + str(message.chat.id) + '.txt', 'w')
+    try:
+        with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
+            print(file.read().count('\n'))
+            text_file = file.read()
+            print('Schalke 04' in text_file)
+            if team['team'] in text_file:
+                if file.read().count('\n') > 10:
+                    file.close
+                    with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+                        file.write(team['team'] + '\n')
+                    return True
+                else:
+                    return False
+            else:
+                return True
+    except:
+        print('new file')
+        with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+            file.write(team['team'] + '\n')
+
+
+# def check_pure_random(message, team):
+#     try:
+#         with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
+#             print(file.read().count('\n'))
+#             text_file = file.read()
+#             print('Schalke 04' in text_file)
+#             if 'Schalke 04' in text_file:
+#                 if file.read().count('\n') > 10:
+#                     file.close
+#                     with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+#                         file.write(team['team'] + '\n')
+#                     return True
+#                 else:
+#                     return False
+#             else:
+#                 return True
+#     except:
+#         print('new file')
+#         with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+#             file.write(team['team'] + '\n')
 
 bot.polling()
