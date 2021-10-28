@@ -79,7 +79,7 @@ bundesliga = [  {'team': 'Borussia Dortmund', 'media': 'https://media3.giphy.com
                 {'team': 'Mainz 05', 'media': 'https://c.tenor.com/ohdvw7IKemkAAAAd/barreiro-mainz05.gif'},
                 {'team': 'Borussia Mönchengladbach', 'media': 'https://c.tenor.com/B5RvNOQbp38AAAAS/j%C3%BCnter-borussia.gif'},
                 {'team': 'Schalke 04', 'media': 'https://c.tenor.com/2HF7jEsPbvcAAAAS/fifa07-sport.gif'},
-                {'team': 'VfB Stuttgart', 'media': 'https://c.tenor.com/Uye3dH36LqYAAAAS/vfb-stuttgart.gif'},
+                {'team': 'VfB Stuttgart', 'media': 'https://c.tenor.com/Uye3dH36LqYAAAAC/vfb-stuttgart.gif'},
                 {'team': 'VfL Wolfsburg', 'media': 'https://c.tenor.com/Z1FbNa5FDlgAAAAS/vfl-wolfsburg.gif'}]
 
 barclays = [{'team': 'Chelsea', 'media': 'https://c.tenor.com/r1iKg11WGwgAAAAM/heiitse-cfc.gif'},
