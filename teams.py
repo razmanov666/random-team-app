@@ -67,20 +67,19 @@ bundesliga = [  {'team': 'Borussia Dortmund', 'media': 'https://media3.giphy.com
                 {'team': 'FC Augsburg', 'media': 'https://c.tenor.com/eCoQRFOa1FMAAAAd/southampton-danso.gif'},
                 {'team': 'Hertha BSC', 'media': 'https://c.tenor.com/f1tPRobqWLoAAAAS/hertha-berlin.gif'},
                 {'team': 'Union Berlin', 'media': 'https://thumbs.gfycat.com/AdorableEarlyBeagle-mobile.mp4'},
-                # https://promdevelop.ru/wp-content/uploads/2021/07/Svastika-768x480.jpg
                 {'team': 'Arminia Bielefeld', 'media': 'https://c.tenor.com/lszgDhczfcYAAAAC/haxteluenq-haxtanak.gif'},
                 {'team': 'Werder Bremen', 'media': 'https://img.webme.com/pic/m/meine-gifs/werderbremen2.gif'},
-                {'team': 'Eintracht Frankfurt', 'media': 'https://c.tenor.com/bWSoSuzSQy4AAAAj/sge-eintracht.gif'},
-                {'team': 'SC Freiburg', 'media': 'https://c.tenor.com/yVBHENUNPU8AAAAS/greta-gretazilla.gif'},
+                {'team': 'Eintracht Frankfurt', 'media': 'https://c.tenor.com/bWSoSuzSQy4AAAAi/sge-eintracht.gif'},
+                {'team': 'SC Freiburg', 'media': 'https://c.tenor.com/P9mouO9fFLgAAAAj/bundesliga-club.gif'},
                 {'team': '1899 Hoffenheim', 'media': 'https://c.tenor.com/Wwuj4KMIpjAAAAAC/tsg-1899.gif'},
                 {'team': '1. FC Köln', 'media': 'http://image.blingee.com/images15/content/output/000/000/000/32b/120976972_1420097.gif'},
                 {'team': 'RB Leipzig', 'media': 'https://c.tenor.com/d1_hoZXoExwAAAAi/rbl-rb-leipzig.gif'},
-                {'team': 'Bayer Leverkusen', 'media': 'https://c.tenor.com/kIPk0O6b2_IAAAAS/lukas-hradecky.gif'},
+                {'team': 'Bayer Leverkusen', 'media': 'https://c.tenor.com/kIPk0O6b2_IAAAAC/lukas-hradecky.gif'},
                 {'team': 'Mainz 05', 'media': 'https://c.tenor.com/ohdvw7IKemkAAAAd/barreiro-mainz05.gif'},
-                {'team': 'Borussia Mönchengladbach', 'media': 'https://c.tenor.com/B5RvNOQbp38AAAAS/j%C3%BCnter-borussia.gif'},
-                {'team': 'Schalke 04', 'media': 'https://c.tenor.com/2HF7jEsPbvcAAAAS/fifa07-sport.gif'},
+                {'team': 'Borussia Mönchengladbach', 'media': 'https://c.tenor.com/B5RvNOQbp38AAAAC/j%C3%BCnter-borussia.gif'},
+                {'team': 'Schalke 04', 'media': 'https://c.tenor.com/2HF7jEsPbvcAAAAC/fifa07-sport.gif'},
                 {'team': 'VfB Stuttgart', 'media': 'https://c.tenor.com/Uye3dH36LqYAAAAC/vfb-stuttgart.gif'},
-                {'team': 'VfL Wolfsburg', 'media': 'https://c.tenor.com/Z1FbNa5FDlgAAAAS/vfl-wolfsburg.gif'}]
+                {'team': 'VfL Wolfsburg', 'media': 'https://c.tenor.com/Z1FbNa5FDlgAAAAC/vfl-wolfsburg.gif'}]
 
 barclays = [{'team': 'Chelsea', 'media': 'https://c.tenor.com/r1iKg11WGwgAAAAM/heiitse-cfc.gif'},
             {'team': 'Manchester United', 'media': ''},
