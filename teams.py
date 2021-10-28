@@ -11,14 +11,14 @@ liga_bbva = [   {'team':'Barcelona', 'media': 'https://c.tenor.com/HuG2PXbKb98AA
                 {'team':'Getafe', 'media': 'https://c.tenor.com/91dYAas8UfAAAAAd/bordal%C3%A1s-getafe-sorpresa.gif'},
                 {'team':'Granada', 'media': 'http://4.bp.blogspot.com/-nTCBLK__krw/USMvAtavVnI/AAAAAAAAACk/d4LjDOdI7TI/s320/escudo+granada+para+colorear.gif'},
                 {'team':'Huesca', 'media': 'https://besthqwallpapers.com/Uploads/12-12-2019/115179/thumb2-huesca-fc-golden-logo-la-liga-2-red-metal-background-football.jpg'},
-                {'team':'Levante', 'media': ''},
-                {'team':'Osasuna', 'media': ''},
-                {'team':'Real Betis', 'media':  ''},
-                {'team':'Real Sociedad', 'media':  ''},
-                {'team':'Sevilla', 'media': ''},
-                {'team':'Valencia', 'media': ''},
-                {'team':'Valladolid', 'media': ''},
-                {'team':'Villarreal', 'media': ''}]
+                {'team':'Levante', 'media': 'https://c.tenor.com/b0XtzaeK6xgAAAAd/txus-bixquert-levante-ud.gif'},
+                {'team':'Osasuna', 'media': 'https://c.tenor.com/_5n1MTps7fQAAAAd/osasuna-sergioherrera.gif'},
+                {'team':'Real Betis', 'media':  'https://c.tenor.com/5IY1_slrbA8AAAAj/alex-moreno-real-betis.gif'},
+                {'team':'Real Sociedad', 'media':  'https://c.tenor.com/ntrvlpTVEbQAAAAC/imanol-alguacil-imanol.gif'},
+                {'team':'Sevilla', 'media': 'https://amazfitwatchfaces.com/storage/gtr/img/1617104197_945c22e88f.gif'},
+                {'team':'Valencia', 'media': 'https://c.tenor.com/opBK_g5gKnUAAAAC/valencia-logo.gif'},
+                {'team':'Valladolid', 'media': 'https://amazfitwatchfaces.com/storage/bip/img/5c224e471fc81_25122018.gif'},
+                {'team':'Villarreal', 'media': 'https://c.tenor.com/jy4W_x2JeacAAAAi/villarreal-la.gif'}]
 
 seria_a = [ {'team': 'Juventus', 'media': ''},
             {'team': 'AC Milan', 'media': ''},
