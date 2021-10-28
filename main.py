@@ -32,7 +32,7 @@ def send_message(message, team, liga):
     team_name = team['team']
     team_and_liga = 'Team: ' + team_name + '\nLiga: ' + liga_name + '\n'
     if message.chat.id != admin:
-        if random.choice(range(1.0, 10.0)) < 2.5:
+        if random.choice(range(1, 100)) < 20:
             bot.send_video(message.chat.id, 'https://c.tenor.com/4fH8zSIuSvcAAAAM/cristiano-ronaldo-soccer.gif')
             bot.send_message(message.chat.id, 'МУЧОС ГРАСИАС АФЕССИОНА SUIIIIIUIU')
             bot.send_message(message.chat.id, text='Братанчик нахуй это джекпот бери ЛЕДЖЕНДС\nСельвупле пидорас')
