@@ -20,7 +20,7 @@ admin = 406626012
 #         main(message, i)
 
 
-def main(message, i):
+def main(message):
     liga = random.choice(all_teams)
     team = random.choice(liga)
     # team = liga[i]
