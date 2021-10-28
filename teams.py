@@ -65,7 +65,7 @@ ligue_1 = [ {'team': 'PSG', 'media': 'https://i.pinimg.com/originals/28/9d/17/28
 bundesliga = [  {'team': 'Borussia Dortmund', 'media': 'https://media3.giphy.com/media/lqqTQURjPNKewAE8Tp/giphy.gif'},
                 {'team': 'Bayern Munich', 'media': 'https://img.fcbayern.com/image/upload/cms/public/images/fcbayern-com/homepage/social-media/trachtentanz_muller.gif'},
                 {'team': 'FC Augsburg', 'media': 'https://c.tenor.com/eCoQRFOa1FMAAAAd/southampton-danso.gif'},
-                {'team': 'Hertha BSC', 'media': 'https://c.tenor.com/f1tPRobqWLoAAAAS/hertha-berlin.gif'},
+                {'team': 'Hertha BSC', 'media': 'https://c.tenor.com/DQmg1BXNgQkAAAPo/hertha-bsc-revolution.mp4'},
                 {'team': 'Union Berlin', 'media': 'https://thumbs.gfycat.com/AdorableEarlyBeagle-mobile.mp4'},
                 {'team': 'Arminia Bielefeld', 'media': 'https://c.tenor.com/lszgDhczfcYAAAAC/haxteluenq-haxtanak.gif'},
                 {'team': 'Werder Bremen', 'media': 'https://img.webme.com/pic/m/meine-gifs/werderbremen2.gif'},
