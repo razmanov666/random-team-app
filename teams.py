@@ -20,8 +20,8 @@ liga_bbva = [   {'team':'Barcelona', 'media': 'https://c.tenor.com/HuG2PXbKb98AA
                 {'team':'Valladolid', 'media': 'https://amazfitwatchfaces.com/storage/bip/img/5c224e471fc81_25122018.gif'},
                 {'team':'Villarreal', 'media': 'https://c.tenor.com/jy4W_x2JeacAAAAi/villarreal-la.gif'}]
 
-seria_a = [ {'team': 'Juventus', 'media': ''},
-            {'team': 'AC Milan', 'media': ''},
+seria_a = [ {'team': 'Juventus', 'media': 'https://c.tenor.com/2vMBsfOaJwgAAAAi/cristiano-ronaldo-ronaldo.gif'},
+            {'team': 'AC Milan', 'media': 'https://c.tenor.com/49IPKC1sGSIAAAAM/ibra.gif'},
             {'team': 'Atalanta', 'media': ''},
             {'team': 'Benevento', 'media': ''},
             {'team': 'Bologna', 'media': ''},
