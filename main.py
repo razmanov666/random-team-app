@@ -2,6 +2,7 @@ import random
 import telebot
 import config
 import teams
+# import json
 
 bot = telebot.TeleBot(config.token)
 all_teams = [
@@ -13,6 +14,7 @@ all_teams = [
             ]
 bogma = 426128881
 admin = 406626012
+pure_random = []
 
 @bot.message_handler(commands=['start', 'help'])
 # def cycle(message):
@@ -25,12 +27,13 @@ def main(message):
     team = random.choice(liga)
     # team = liga[i]
     send_message(message, team, liga)
-    
+
 
 def send_message(message, team, liga):
     liga_name = get_liga(liga)
     team_name = team['team']
     team_and_liga = 'Team: ' + team_name + '\nLiga: ' + liga_name + '\n'
+    get_pure_random(message, team)
     if message.chat.id != admin:
         if random.choice(range(1, 100)) < 20:
             bot.send_video(message.chat.id, 'https://c.tenor.com/4fH8zSIuSvcAAAAM/cristiano-ronaldo-soccer.gif')
@@ -79,5 +82,11 @@ def send_logo(team, message):
     else:
         bot.send_message(message.chat.id, text='No logo yet')
 
+
+def get_pure_random(message, team):
+    file = open('pure_random/' + str(message.chat.id) + '.txt', '+')
+    file.writelines(team)
+    for line in file:
+        print(line)
 
 bot.polling()
