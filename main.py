@@ -36,7 +36,7 @@ def main(message):
 
 
 def check_team(message, team):
-    # try:
+    try:
         with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
             text_file = file.read()
             # print(text_file)
@@ -51,10 +51,10 @@ def check_team(message, team):
                 return 'not_unique'
             else:
                 return 'unique'
-    # except:
+    except:
     #     print('except')
-    #     with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
-    #         file.write('')
+        with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+            file.write('')
 
 def send_message(message, team, liga):
     liga_name = get_liga(liga)
