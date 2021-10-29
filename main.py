@@ -36,24 +36,26 @@ def main(message):
 
 
 def check_team(message, team):
-    try:
+    # try:
         with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
             text_file = file.read()
-            print(text_file)
+            # print(text_file)
 
             # print(text_file.split('\n'))
             if text_file.count('\n') > 19:
                 file.close()
-                with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
-                    file.write('')
+                update_teams_file(message)
+                # with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+                #     file.write('')
                 return 'unique'
             if team['team'] in text_file:
                 return 'not_unique'
             else:
                 return 'unique'
-    except:
-        with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
-            file.write('')
+    # except:
+    #     print('except')
+    #     with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+    #         file.write('')
 
 def send_message(message, team, liga):
     liga_name = get_liga(liga)
@@ -62,10 +64,12 @@ def send_message(message, team, liga):
     add_pure_random(message, team)
     if message.chat.id != admin:
         if random.choice(range(1, 100)) < 20:
-            bot.send_video(message.chat.id, 'https://c.tenor.com/4fH8zSIuSvcAAAAM/cristiano-ronaldo-soccer.gif')
-            bot.send_message(message.chat.id, 'МУЧОС ГРАСИАС АФЕССИОНА SUIIIIIUIU')
-            bot.send_message(message.chat.id, text='Братанчик нахуй это джекпот бери ЛЕДЖЕНДС\nСельвупле пидорас')
-            bot.send_message(admin, text=message.from_user.first_name + ' должен взять: \n' + 'Ебаных легенд')
+            # bot.send_video(message.chat.id, 'https://c.tenor.com/4fH8zSIuSvcAAAAM/cristiano-ronaldo-soccer.gif')
+            fail = open('mp4.mp4', 'rb')
+            bot.send_video(message.chat.id, fail)
+            bot.send_message(message.chat.id, 'Bonjour гомодрил')
+            bot.send_message(message.chat.id, text='Братанчик нахуй это джекпот бери Лягушатников\nСельвупле пидорас')
+            bot.send_message(admin, text=message.from_user.first_name + ' должен взять: \n' + 'France')
         else:
             send_logo(team, message)
             bot.send_message(message.chat.id, text=team_and_liga)
@@ -115,8 +119,15 @@ def add_pure_random(message, team):
         file.writelines(team['team']+' \n')
     with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file_read:
         text_file = file_read.read()
-        print(text_file.split('\n'))
         print(text_file.count('\n'))
 
+
+def update_teams_file(message):
+    with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file_read:
+        text_file = file_read.read()
+        new_text_file = text_file.split('\n')[1:]
+    with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+        file.write('\n'.join(new_text_file))
+        
 
 bot.polling()
