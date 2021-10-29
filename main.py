@@ -42,7 +42,7 @@ def check_team(message, team):
             # print(text_file)
 
             # print(text_file.split('\n'))
-            if text_file.count('\n') > 29:
+            if text_file.count('\n') > 35:
                 file.close()
                 update_teams_file(message)
                 # with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
