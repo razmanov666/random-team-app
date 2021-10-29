@@ -116,7 +116,7 @@ def send_logo(team, message):
 def add_pure_random(message, team):
     with open('pure_random/' + str(message.chat.id) + '.txt', 'a') as file:
         
-        file.writelines(team['team']+' \n')
+        file.writelines(team['team']+'\n')
     with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file_read:
         text_file = file_read.read()
         print(text_file.count('\n'))
