@@ -39,7 +39,14 @@ def check_team(message, team):
     try:
         with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
             text_file = file.read()
-            print('team: ' + team['team'] + 'in ' + text_file)
+            print(text_file)
+
+            # print(text_file.split('\n'))
+            if text_file.count('\n') > 19:
+                file.close()
+                with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
+                    file.write('')
+                return 'unique'
             if team['team'] in text_file:
                 return 'not_unique'
             else:
@@ -103,64 +110,13 @@ def send_logo(team, message):
 
 
 def add_pure_random(message, team):
-
     with open('pure_random/' + str(message.chat.id) + '.txt', 'a') as file:
-        file.writelines(team['team']+'\n')
-    with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
-        text_file = file.read()
-        if 'Schalke 04' in text_file:
-            count_n = file.read().count('\n')
-            if count_n > 10:
-                file.close
-                with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
-                    file.write(team['team'] + '\n')
-                return True
-            else:
-                return False
+        
+        file.writelines(team['team']+' \n')
+    with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file_read:
+        text_file = file_read.read()
+        print(text_file.split('\n'))
+        print(text_file.count('\n'))
 
-    if(str(file).count('\n') > 10):
-        print('clear')
-        file = open('pure_random/' + str(message.chat.id) + '.txt', 'w')
-    try:
-        with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
-            print(file.read().count('\n'))
-            text_file = file.read()
-            print('Schalke 04' in text_file)
-            if team['team'] in text_file:
-                if file.read().count('\n') > 10:
-                    file.close
-                    with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
-                        file.write(team['team'] + '\n')
-                    return True
-                else:
-                    return False
-            else:
-                return True
-    except:
-        print('new file')
-        with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
-            file.write(team['team'] + '\n')
-
-
-# def check_pure_random(message, team):
-#     try:
-#         with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
-#             print(file.read().count('\n'))
-#             text_file = file.read()
-#             print('Schalke 04' in text_file)
-#             if 'Schalke 04' in text_file:
-#                 if file.read().count('\n') > 10:
-#                     file.close
-#                     with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
-#                         file.write(team['team'] + '\n')
-#                     return True
-#                 else:
-#                     return False
-#             else:
-#                 return True
-#     except:
-#         print('new file')
-#         with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
-#             file.write(team['team'] + '\n')
 
 bot.polling()

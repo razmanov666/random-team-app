@@ -1,37 +1,17 @@
-Real Sociedad
-Alavés
-Schalke 04
-Monaco
-Athletic Bilbao
-Huesca
-Nantes
-Brighton & Hove Albion
-Leeds United
-Valencia
-Schalke 04
-Montpellier
-Brest
-Crystal Palace
-Aston Villa
-Marseille
-Lens
-Chelsea
-Atalanta
-Burnley
-Real Sociedad
-Atlético Madrid
-Everton
-Juventus
-Arminia Bielefeld
-Crystal Palace
-Nîmes
-VfB Stuttgart
-Juventus
-Monaco
-Lille
-Bayer Leverkusen
-Lyon
-Elche
-VfL Wolfsburg
-Valladolid
-Genoa
+Real Betis 
+Reims 
+Arsenal 
+Aston Villa 
+Alavés 
+Crystal Palace 
+Lens 
+Nantes 
+Lorient 
+Dijon 
+Cagliari 
+Atlético Madrid 
+Nice 
+Bordeaux 
+Metz 
+Athletic Bilbao 
+Borussia Dortmund 
