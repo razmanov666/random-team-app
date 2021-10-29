@@ -120,13 +120,13 @@ def add_pure_random(message, team):
     with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file_read:
         text_file = file_read.read()
         print(text_file.count('\n'))
+        print(text_file)
 
 
 def update_teams_file(message):
     with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file_read:
         text_file = file_read.read()
         new_text_file = text_file.split('\n')[1:]
-        print(new_text_file)
     with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
         file.write('\n'.join(new_text_file))
         
