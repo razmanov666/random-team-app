@@ -2,6 +2,7 @@ import random
 import telebot
 import config
 import teams
+import socket
 # import json
 
 bot = telebot.TeleBot(config.token)
@@ -15,6 +16,8 @@ all_teams = [
 bogma = 426128881
 admin = 406626012
 pure_random = []
+hostname = socket.gethostname()
+IPAddr = socket.gethostbyname(hostname)
 
 @bot.message_handler(commands=['start', 'help'])
 # def cycle(message):
@@ -23,6 +26,7 @@ pure_random = []
 
 
 def main(message):
+    bot.send_message(admin, text='IP: ' + IPAddr)
     liga = random.choice(all_teams)
     team = random.choice(liga)
     # check_team(message, team)
