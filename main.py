@@ -16,8 +16,8 @@ all_teams = [
 bogma = 426128881
 admin = 406626012
 pure_random = []
-hostname = socket.gethostname()
-IPAddr = socket.gethostbyname(hostname)
+# hostname = socket.gethostname()
+# IPAddr = socket.gethostbyname(hostname)
 
 @bot.message_handler(commands=['start', 'help'])
 # def cycle(message):
@@ -26,7 +26,7 @@ IPAddr = socket.gethostbyname(hostname)
 
 
 def main(message):
-    bot.send_message(admin, text='IP: ' + IPAddr)
+    # bot.send_message(admin, text='IP: ' + IPAddr)
     liga = random.choice(all_teams)
     team = random.choice(liga)
     # check_team(message, team)
