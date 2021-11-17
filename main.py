@@ -77,11 +77,11 @@ def send_message(message, team, liga):
             send_logo(team, message)
             bot.send_message(message.chat.id, text=team_and_liga)
             bot.send_message(admin, text=message.from_user.first_name + ' должен взять: \n' + team_and_liga)
-        bot.send_message(admin, text=open("pure_random/" + message.chat.id + '.txt'))
+        bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt'))
     else:
         send_logo(team, message)
         bot.send_message(message.chat.id, text=team_and_liga)
-        bot.send_message(admin, text=open("pure_random/" + message.chat.id + '.txt'))
+        bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt'))
 
 
 def get_liga(liga):
