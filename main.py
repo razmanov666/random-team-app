@@ -1,4 +1,5 @@
 import random
+from typing import Text
 import telebot
 import config
 import teams
@@ -15,6 +16,7 @@ all_teams = [
             ]
 bogma = 426128881
 admin = 406626012
+sokur = 428379271
 pure_random = []
 # hostname = socket.gethostname()
 # IPAddr = socket.gethostbyname(hostname)
@@ -46,7 +48,7 @@ def check_team(message, team):
             # print(text_file)
 
             # print(text_file.split('\n'))
-            if text_file.count('\n') > 70:
+            if text_file.count('\n') > 69:
                 file.close()
                 update_teams_file(message)
                 # with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
@@ -82,9 +84,9 @@ def send_message(message, team, liga):
         send_logo(team, message)
         bot.send_message(message.chat.id, text=team_and_liga)
     filename_open = "pure_random/" + str(message.chat.id) + '.txt'
+    for_caption = 'Sokur' if message.chat.id == sokur else 'Kurama' if message.chat.id == admin else str(message.chat.id)  
     with open(filename_open, 'rb') as file:
-        bot.send_document(admin, file, 'log_' + str(message.chat.id) + '.txt')
-    # bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt').read())
+        bot.send_document(admin, file, 'log_' + str(message.chat.id) + '.txt', caption=for_caption)
 
 
 def get_liga(liga):

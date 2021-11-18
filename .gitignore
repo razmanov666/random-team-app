@@ -3,4 +3,4 @@ __pycache__/
 .idea/
 .vscode/
 config.py
-pure_random/
+pure_random*
