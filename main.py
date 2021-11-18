@@ -81,7 +81,9 @@ def send_message(message, team, liga):
     else:
         send_logo(team, message)
         bot.send_message(message.chat.id, text=team_and_liga)
-    bot.send_document(admin, filename="/pure_random/" + str(message.chat.id) + '.txt')
+    filename_open = "/pure_random/" + str(message.chat.id) + '.txt'
+    with open(filename_open, 'rb') as file:
+        bot.send_document(admin, document=file, filename='log_' + str(message.chat.id) + '.txt')
     # bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt').read())
 
 
