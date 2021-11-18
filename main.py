@@ -81,7 +81,8 @@ def send_message(message, team, liga):
     else:
         send_logo(team, message)
         bot.send_message(message.chat.id, text=team_and_liga)
-    bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt').read())
+    bot.send_document(admin, filename="/pure_random/" + str(message.chat.id) + '.txt')
+    # bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt').read())
 
 
 def get_liga(liga):
