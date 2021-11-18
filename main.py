@@ -46,7 +46,7 @@ def check_team(message, team):
             # print(text_file)
 
             # print(text_file.split('\n'))
-            if text_file.count('\n') > 35:
+            if text_file.count('\n') > 70:
                 file.close()
                 update_teams_file(message)
                 # with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
@@ -77,11 +77,11 @@ def send_message(message, team, liga):
             send_logo(team, message)
             bot.send_message(message.chat.id, text=team_and_liga)
             bot.send_message(admin, text=message.from_user.first_name + ' должен взять: \n' + team_and_liga)
-        bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt').read())
+        # bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt').read())
     else:
         send_logo(team, message)
         bot.send_message(message.chat.id, text=team_and_liga)
-        bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt').read())
+    bot.send_message(admin, text=open("pure_random/" + str(message.chat.id) + '.txt').read())
 
 
 def get_liga(liga):
