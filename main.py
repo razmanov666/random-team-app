@@ -45,20 +45,14 @@ def check_team(message, team):
     try:
         with open('pure_random/' + str(message.chat.id) + '.txt', 'r') as file:
             text_file = file.read()
-            # print(text_file)
-
-            # print(text_file.split('\n'))
             if text_file.count('\n') > 69:
                 file.close()
                 update_teams_file(message)
-                # with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
-                #     file.write('')
             if team['team'] in text_file:
                 return 'not_unique'
             else:
                 return 'unique'
     except:
-    #     print('except')
         with open('pure_random/' + str(message.chat.id) + '.txt', 'w') as file:
             file.write('')
 
