@@ -62,9 +62,8 @@ def send_message(message, team, liga):
     team_name = team['team']
     team_and_liga = 'Team: ' + team_name + '\nLiga: ' + liga_name + '\n'
     add_pure_random(message, team)
-    if message.chat.id != admin:
+    if message.chat.id != admin and message.chat.id != bogma:
         if random.choice(range(1, 100)) < 20:
-            # bot.send_video(message.chat.id, 'https://c.tenor.com/4fH8zSIuSvcAAAAM/cristiano-ronaldo-soccer.gif')
             fail = open('mp4.mp4', 'rb')
             bot.send_video(message.chat.id, fail)
             bot.send_message(message.chat.id, 'Bonjour гомодрил')
@@ -74,6 +73,8 @@ def send_message(message, team, liga):
             send_logo(team, message)
             bot.send_message(message.chat.id, text=team_and_liga)
             bot.send_message(admin, text=message.from_user.first_name + ' должен взять: \n' + team_and_liga)
+    elif message.chat.id == bogma:
+        bot.send_video(message.chat.id, "sticker.webp")
     else:
         send_logo(team, message)
         bot.send_message(message.chat.id, text=team_and_liga)
