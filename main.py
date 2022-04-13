@@ -80,7 +80,7 @@ def send_message(message, team, liga):
     filename_open = "pure_random/" + str(message.chat.id) + '.txt'
     for_caption = 'Sokur' if message.chat.id == sokur else 'Kurama' if message.chat.id == admin else str(message.from_user.first_name)  
     with open(filename_open, 'rb') as file:
-        bot.send_document(admin, file, 'log_' + str(message.chat.id) + ' '+ message.from_user.username +' .txt', caption=for_caption)
+        bot.send_document(admin, file, ' log_' + str(message.chat.id) + ' '+ message.from_user.username +' .txt', caption=for_caption)
 
 
 def get_liga(liga):
